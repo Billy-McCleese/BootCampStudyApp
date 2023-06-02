@@ -1,0 +1,6 @@
+<h2>Question List</h2>
+<ul>
+    <li *ngFor="let question of questions">{{ question.questionTitle}}
+    <button (click)="markAsFavorite(question)">Mark as Favorite</button>/li>
+    </li>
+</ul>
