@@ -7,6 +7,7 @@ import { QuestionListComponentComponent } from './question-list-component/questi
 import { QuestionDetailComponentComponent } from './question-detail-component/question-detail-component.component';
 import { FavoriteListComponentComponent } from './favorite-list-component/favorite-list-component.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
