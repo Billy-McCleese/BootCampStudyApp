@@ -1,1 +1,6 @@
-<p>question-detail-component works!</p>
+<h2>Question Detail</h2>
+<div *ngIf="selectedQuestion">
+  <h3>{{ selectedQuestion.questionTitle }}</h3>
+  <p>{{ selectedQuestion.answer }}</p>
+  <button (click)="markAsFavorite(selectedQuestion)">Mark as Favorite</button>
+</div>
